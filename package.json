@@ -1,0 +1,12 @@
+{
+  "name": "cloudlet",
+  "version": "1.0.0",
+  "description": "Lightweight containerized cloud platform",
+  "main": "test.js",
+  "scripts": {
+    "create:containers": "npm run --prefix containers all"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

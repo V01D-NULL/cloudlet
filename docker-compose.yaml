@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  api:
+    build:
+      context: ./api
+    ports:
+      - "8888:5000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  net-manager:
+    build:
+      context: ./net
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  ct-launch:
+    build:
+      context: ./ct-launch
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+

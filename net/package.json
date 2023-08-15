@@ -1,0 +1,23 @@
+{
+  "name": "vpc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/dockerode": "^3.3.19",
+    "pino-pretty": "^10.2.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "dockerode": "^3.3.5",
+    "fastify": "^4.21.0",
+    "fastify-plugin": "^4.5.1"
+  }
+}

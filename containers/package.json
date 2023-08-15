@@ -1,0 +1,12 @@
+{
+  "name": "containers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "all": "node build-images"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

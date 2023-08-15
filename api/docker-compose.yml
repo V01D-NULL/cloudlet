@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  api:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - cloudlet_default
+
+    ports:
+      - "8888:5000"
+
+networks:
+  cloudlet_default:
+    external: true
+  
